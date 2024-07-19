@@ -1,8 +1,8 @@
-//Definimos variables a utilizar
+//Definimos variable cantidad de juegos
 let cantidadJuegos;
-const piedra = 0;
+/*const piedra = 0;
 const papel = 1;
-const tijera = 2;
+const tijera = 2;*/
 
 //Pedimos cantidad de veces que se repetirá el juego a usuario, el ciclo se termina si la cantidad de veces es mayor a cero
 do {
