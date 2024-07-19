@@ -4,10 +4,11 @@ let cantidadJuegos;
 const papel = 1;
 const tijera = 2;*/
 
-//Pedimos cantidad de veces que se repetirá el juego a usuario, el ciclo se termina si la cantidad de veces es mayor a cero
+//Pedimos cantidad de veces que se repetirá el juego a usuario
+//El ciclo se termina si la cantidad de veces es un número y este es mayor a cero
 do {
-  cantidadJuegos = Number(prompt("Ingresa la cantidad de veces que jugaremos (ingresa un número mayor a cero)"));
-} while (cantidadJuegos <= 0);
+  cantidadJuegos = parseInt(prompt("Ingresa la cantidad de veces que jugaremos (ingresa un número mayor a cero)"));
+} while (cantidadJuegos <= 0 || Number.isInteger(cantidadJuegos) != true);
 
 // For para ejecutar la cantidad de veces de repticion del juego
 for (let i = 0; i < cantidadJuegos; i++) {
