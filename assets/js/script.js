@@ -13,10 +13,11 @@ do {
 // For para ejecutar la cantidad de veces de repticion del juego
 for (let i = 0; i < cantidadJuegos; i++) {
 
-  //Pedimos la elección al usuario
+  //Declaramos variable para guardar elección usuario en number
   let juegoUsuario;
-
+  //Pedimos la elección al usuario
   let eleccionUser = prompt("Escribe Piedra, Papel o Tijera");
+  //Según elección guarda en juegoUsuario
   switch (eleccionUser.toLowerCase()) {
     case "piedra":
       juegoUsuario = 0;
@@ -54,6 +55,7 @@ for (let i = 0; i < cantidadJuegos; i++) {
   ● Papel le gana a piedra
   ● Piedra le gana a tijera*/
 
+  //Condicionales basadas en que usuario no elige Piedra
   if (juegoUsuario != 0) {
     if (juegoUsuario > juegoMaquina && juegoMaquina != 0) {
       alert("Ganaste!!!! " + "Juego Maquina: " + eleccionMaquina + " | Tu juego: " + eleccionUser);
@@ -68,6 +70,7 @@ for (let i = 0; i < cantidadJuegos; i++) {
     }
   }
 
+  //Condicionales basadas en que usuario elige Piedra
   if (juegoUsuario == 0) {
     if (juegoUsuario < juegoMaquina && juegoMaquina != 2) {
       alert("Perdiste :( " + "Juego Maquina: " + eleccionMaquina + " | Tu juego: " + eleccionUser);
