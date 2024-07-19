@@ -10,7 +10,7 @@ do {
 } while (cantidadJuegos <= 0);
 
 // For para ejecutar la cantidad de veces de repticion del juego
-for (i = 0; i < cantidadJuegos; i++) {
+for (let i = 0; i < cantidadJuegos; i++) {
 
   //Pedimos la elección al usuario
   let juegoUsuario;
